@@ -37,18 +37,18 @@ public class EquipmentListActy extends BaseActy implements IXListViewListener, A
         listView = (PullToRefreshSwipeMenuListView) findViewById(R.id.list);
         list = new ArrayList<>();
         //到期
-        list.add(new EquipmentBean("drawable://" + R.drawable.tear_ejector, "催泪喷射器", "使用中", "2018-09-22",1));
-        list.add(new EquipmentBean("drawable://" + R.drawable.riot_helmet, "防暴头盔", "使用中", "2019-05-12 23:07",1));
+        list.add(new EquipmentBean("drawable://" + R.drawable.tear_ejector, "催泪喷射器", "使用中", "2018-09-22", 1));
+        list.add(new EquipmentBean("drawable://" + R.drawable.riot_helmet, "防暴头盔", "使用中", "2019-05-12", 1));
         //充电
-        list.add(new EquipmentBean("drawable://" + R.drawable.interphone, "对讲机", "使用中", "2018-05-20",2));
-        list.add(new EquipmentBean("drawable://" + R.drawable.shoulder_lamp, "肩灯", "使用中", "2018-05-17",2));
-        list.add(new EquipmentBean("drawable://" + R.drawable.flashlight, "强光手电", "使用中", "2018-06-01",2));
-        list.add(new EquipmentBean("drawable://" + R.drawable.law_enforcement_instrument, "执法仪", "使用中", "2018-06-04",2));
+        list.add(new EquipmentBean("drawable://" + R.drawable.interphone, "对讲机", "使用中", "2018-05-20", 2));
+        list.add(new EquipmentBean("drawable://" + R.drawable.shoulder_lamp, "肩灯", "使用中", "2018-05-17", 2));
+        list.add(new EquipmentBean("drawable://" + R.drawable.flashlight, "强光手电", "使用中", "2018-06-01", 2));
+        list.add(new EquipmentBean("drawable://" + R.drawable.law_enforcement_instrument, "执法仪", "使用中", "2018-06-04", 2));
         //其他
-        list.add(new EquipmentBean("drawable://" + R.drawable.multifunction_belt, "多功能腰带", "在库", "",3));
-        list.add(new EquipmentBean("drawable://" + R.drawable.cut_resistant_gloves, "防割手套", "使用中", "",3));
-        list.add(new EquipmentBean("drawable://" + R.drawable.telescopic_baton, "伸缩警棍", "使用中", "",3));
-        list.add(new EquipmentBean("drawable://" + R.drawable.handcuffs, "手铐", "使用中", "",3));
+        list.add(new EquipmentBean("drawable://" + R.drawable.multifunction_belt, "多功能腰带", "在库", "", 3));
+        list.add(new EquipmentBean("drawable://" + R.drawable.cut_resistant_gloves, "防割手套", "使用中", "", 3));
+        list.add(new EquipmentBean("drawable://" + R.drawable.telescopic_baton, "伸缩警棍", "使用中", "", 3));
+        list.add(new EquipmentBean("drawable://" + R.drawable.handcuffs, "手铐", "使用中", "", 3));
 
         //        list.add(new EquipmentBean("drawable://" + R.drawable.electric_horn, "电喇叭", "使用中", "2018-05-20 17:20"));
 //        list.add(new EquipmentBean("drawable://" + R.drawable.luminescent_baton, "发光指挥棒", "使用中", "2018-05-17 08:56"));

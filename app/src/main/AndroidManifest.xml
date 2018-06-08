@@ -36,6 +36,7 @@
         <activity android:name=".acty.TeachingMateriaActy" />
         <activity android:name=".acty.EquipmentListActy" />
         <activity android:name=".acty.RemindListActy" />
+        <activity android:name=".acty.OverdueEquipmentListActy" />
         <activity android:name=".acty.MyInfoActy" />
         <activity android:name=".acty.ChangePwdActy" />
         <!--视频-->

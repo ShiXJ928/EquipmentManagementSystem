@@ -15,6 +15,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -114,5 +117,19 @@ public class Utility {
             hashKey = String.valueOf(key.hashCode());
         }
         return hashKey;
+    }
+
+    public static long getDayByTime(String time) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = null;
+        try {
+            date = sdf.parse(time);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        long s1 = date.getTime();//将时间转为毫秒
+        long s2 = System.currentTimeMillis();//得到当前的毫秒
+        long s = (s2 - s1) / 1000 / 60 / 60 / 24;
+        return s;
     }
 }

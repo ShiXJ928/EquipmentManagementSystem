@@ -41,7 +41,7 @@ public class MainActy extends BaseActy {
     }
 
     private void initView() {
-        initTitleBar(R.id.title, 0, 0, "首页", null, R.color.bg_blue1, R.color.white);
+        initTitleBar(R.id.title, 0, 0, "首页", "超期未还", R.color.bg_blue1, R.color.white);
         iv_bg = (ImageView) findViewById(R.id.iv_bg);
         iv_bg.setImageDrawable(Utility.getBitmap(this, R.drawable.bg_main));
         ll_equipmenet_list = (LinearLayout) findViewById(R.id.ll_equipmenet_list);
@@ -80,9 +80,9 @@ public class MainActy extends BaseActy {
     public void onClick(View v) {
         super.onClick(v);
         switch (v.getId()) {
-//            case R.id.tv_right:
-//                startActivity(new Intent(MainActy.this, TeachingMateriaActy.class));
-//                break;
+            case R.id.tv_right:
+                startActivity(new Intent(MainActy.this, OverdueEquipmentListActy.class));
+                break;
             case R.id.ll_equipmenet_list:
                 startActivity(new Intent(MainActy.this, EquipmentListActy.class));
                 break;
