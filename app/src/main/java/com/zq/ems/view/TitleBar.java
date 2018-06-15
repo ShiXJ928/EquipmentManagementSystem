@@ -19,7 +19,7 @@ public class TitleBar extends RelativeLayout {
     public ImageView left;
     public ImageView right;
     public TextView titleTV;
-    public TextView tv_right1;
+    public TextView tv_right;
     public RelativeLayout tb_rl_title;
 
     public TitleBar(Context context, AttributeSet attrs) {
@@ -31,7 +31,7 @@ public class TitleBar extends RelativeLayout {
         titleTV = (TextView) findViewById(R.id.tb_tv);
         TextPaint tp = titleTV.getPaint();
         tp.setFakeBoldText(true);
-        tv_right1 = (TextView) findViewById(R.id.tv_right);
+        tv_right = (TextView) findViewById(R.id.tv_right);
         tb_rl_title = (RelativeLayout) findViewById(R.id.tb_rl_title);
     }
 }
