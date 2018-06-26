@@ -4,34 +4,34 @@ package com.zq.ems.bean;
  * Created by sxj on 2016/9/29.
  */
 public class Result {
-    private String message;
-    private int error_code;
-    private Object content;
+    private String msg;
+    private boolean success;
+    private Object records;
 
-    public String getMessage() {
-        if (message == null) {
+    public String getMsg() {
+        if (msg == null) {
             return "";
         }
-        return message;
+        return msg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
-    public int getError_code() {
-        return error_code;
+    public boolean isSuccess() {
+        return success;
     }
 
-    public void setError_code(int error_code) {
-        this.error_code = error_code;
+    public void setSuccess(boolean success) {
+        this.success = success;
     }
 
-    public Object getContent() {
-        return content;
+    public Object getRecords() {
+        return records;
     }
 
-    public void setContent(Object content) {
-        this.content = content;
+    public void setRecords(Object records) {
+        this.records = records;
     }
 }

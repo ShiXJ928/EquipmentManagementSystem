@@ -15,6 +15,11 @@ public class EquipmentBean {
     public EquipmentBean() {
     }
 
+    public EquipmentBean(String photoPath, String name) {
+        this.photoPath = photoPath;
+        this.name = name;
+    }
+
     public EquipmentBean(String photoPath, String name, String stautes, String time, int type) {
         this.photoPath = photoPath;
         this.name = name;

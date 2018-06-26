@@ -39,6 +39,8 @@
         <activity android:name=".acty.OverdueEquipmentListActy" />
         <activity android:name=".acty.MyInfoActy" />
         <activity android:name=".acty.ChangePwdActy" />
+        <activity android:name=".acty.RecordListActy" />
+        <activity android:name=".acty.RecordInfoActy" />
         <!--视频-->
         <activity
             android:name="com.tencent.smtt.sdk.VideoActivity"

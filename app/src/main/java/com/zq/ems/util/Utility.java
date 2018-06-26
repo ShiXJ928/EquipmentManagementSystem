@@ -132,4 +132,17 @@ public class Utility {
         long s = (s2 - s1) / 1000 / 60 / 60 / 24;
         return s;
     }
+
+//    private String getPhotoPath(String name) {
+//        String photoPath = "";
+//        switch (name) {
+//            case "":
+//                photoPath = "";
+//                break;
+//            default:
+//                photoPath = "";
+//                break;
+//        }
+//        return "";
+//    }
 }

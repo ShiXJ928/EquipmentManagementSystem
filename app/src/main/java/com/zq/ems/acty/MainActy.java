@@ -87,7 +87,7 @@ public class MainActy extends BaseActy {
                 startActivity(new Intent(MainActy.this, EquipmentListActy.class));
                 break;
             case R.id.ll_my_info:
-                startActivity(new Intent(MainActy.this, MyInfoActy.class));
+                startActivity(new Intent(MainActy.this, RecordListActy.class));
                 break;
             case R.id.ll_remind_list:
                 startActivity(new Intent(MainActy.this, RemindListActy.class));
