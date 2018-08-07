@@ -2,6 +2,7 @@ package com.zq.ems.acty;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -18,6 +19,7 @@ import com.zq.ems.R;
 import com.zq.ems.util.ToastUtil;
 import com.zq.ems.util.Utility;
 
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 

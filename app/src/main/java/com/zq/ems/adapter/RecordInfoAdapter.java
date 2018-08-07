@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.zq.ems.R;
+import com.zq.ems.net.NetUrl;
 import com.zq.ems.util.Utility;
 
 import java.util.List;
@@ -65,7 +66,7 @@ public class RecordInfoAdapter extends RecyclerView.Adapter<RecordInfoAdapter.Vi
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.tv_name.setText(data.get(position));//加载数据
-        Utility.displayImage("http://192.168.1.145:8012/images/"+data.get(position)+".jpg", holder.iv, R.drawable.fail_image);
+        Utility.displayImage(NetUrl.URL + "/images/" + data.get(position) + ".jpg", holder.iv, R.drawable.fail_image);
 //        if (position % 4 == 1) {
 //            holder.tv_type.setText("未领取");
 //            holder.tv_type.setTextColor(context.getResources().getColor(R.color.bg_red));

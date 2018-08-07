@@ -133,13 +133,13 @@
                 <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/bg_user" />
+                    android:src="@drawable/bg_apply" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="出入信息" />
+                    android:text="车辆申请" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

@@ -117,4 +117,9 @@ public class LoginActy extends BaseActy {
         }
         return super.onKeyDown(keyCode, event);
     }
+
+    private void startDingtalkApp() {
+        Intent intent = this.getPackageManager().getLaunchIntentForPackage("com.alibaba.android.rimet");
+        startActivity(intent);
+    }
 }

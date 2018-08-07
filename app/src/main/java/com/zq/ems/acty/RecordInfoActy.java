@@ -3,6 +3,7 @@ package com.zq.ems.acty;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -42,6 +43,8 @@ public class RecordInfoActy extends BaseActy {
     private void initView() {
         intent = getIntent();
         recordBean = intent.getParcelableExtra("recordbean");
+        Log.e("------->", recordBean.getRightTools());
+        Log.e("------->", recordBean.getTools());
         initTitleBar(R.id.title, R.drawable.back, 0, recordBean.getLogtime().replace("T", " "), null, R.color.bg_blue1, R.color.white);
         tv_title = (TextView) findViewById(R.id.tv_title);
         tv_un_title = (TextView) findViewById(R.id.tv_un_title);
@@ -77,7 +80,7 @@ public class RecordInfoActy extends BaseActy {
                         break;
                     }
                 }
-                if (i==0){
+                if (i == 0) {
                     unlist.add(strAll);
                 }
             }
