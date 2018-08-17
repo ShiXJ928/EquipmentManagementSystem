@@ -1,1 +1,1 @@
-include ':app', ':library_PullToRefreshSwipeMenuListView','adtextviewlib'
+include ':app', ':library_PullToRefreshSwipeMenuListView','adtextviewlib',':slidelibrary'

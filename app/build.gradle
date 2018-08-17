@@ -34,5 +34,6 @@ dependencies {
     compile 'com.lidong.pdf:android_pdf:1.0.1'
     compile project(":adtextviewlib")
     compile project(':library_PullToRefreshSwipeMenuListView')
+    compile project(':slidelibrary')
     compile files('libs/tbs_sdk_thirdapp_v3.6.0.1234_43608_sharewithdownload_withoutGame_obfs_20180510_111111.jar')
 }

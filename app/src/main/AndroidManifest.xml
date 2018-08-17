@@ -9,8 +9,6 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <uses-permission android:name="android.permission.READ_SETTINGS" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <!-- 硬件加速对X5视频播放非常重要，建议开启 -->
@@ -30,17 +28,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--主页-->
         <activity android:name=".acty.MainActy" />
+        <!--读取文档-->
         <activity android:name=".acty.ReadWordActy" />
+        <!--读取pdf-->
         <activity android:name=".acty.ReadPdfActy" />
+        <!--教学视频-->
         <activity android:name=".acty.TeachingMateriaActy" />
+        <!--单警装备列表-->
         <activity android:name=".acty.EquipmentListActy" />
+        <!--提醒列表-->
         <activity android:name=".acty.RemindListActy" />
+        <!--超期未归装备列表-->
         <activity android:name=".acty.OverdueEquipmentListActy" />
+        <!--我的信息-->
         <activity android:name=".acty.MyInfoActy" />
+        <!--修改密码-->
         <activity android:name=".acty.ChangePwdActy" />
         <activity android:name=".acty.RecordListActy" />
         <activity android:name=".acty.RecordInfoActy" />
+        <!--维修申请-->
+        <activity android:name=".acty.RepairApplyActy" />
+        <!--保养申请-->
+        <activity android:name=".acty.MaintainApplyActy" />
+        <!--维修保养记录-->
+        <activity android:name=".acty.MaintenanceRecordListActy" />
+        <!--申请装备列表-->
+        <activity android:name=".acty.ApplyEquipmentActy" />
+        <!--确认申请-->
+        <activity android:name=".acty.EnterApplyEquipmentActy" />
+        <!--借出装备-->
+        <activity android:name=".acty.LendEquipmentListActy" />
+        <!--申请审批列表-->
+        <activity android:name=".acty.ApplyListActy" />
+
         <!--视频-->
         <activity
             android:name="com.tencent.smtt.sdk.VideoActivity"
@@ -54,5 +76,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

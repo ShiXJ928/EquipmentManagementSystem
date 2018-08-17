@@ -42,7 +42,6 @@
         android:layout_weight="2"
         android:scaleType="fitXY" />
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -76,7 +75,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_remind_list"
+                android:id="@+id/ll_equipment_apply"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -86,13 +85,13 @@
                 <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/bg_remind" />
+                    android:src="@drawable/icon_apply_b" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="提醒消息" />
+                    android:text="装备申请" />
             </LinearLayout>
         </LinearLayout>
 
@@ -103,7 +102,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/ll_teaching_materia"
+                android:id="@+id/ll_message"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -113,17 +112,17 @@
                 <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/bg_teaching" />
+                    android:src="@drawable/icon_message" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="教学资料" />
+                    android:text="消息提醒" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_my_info"
+                android:id="@+id/ll_car_apply"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -133,7 +132,7 @@
                 <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/bg_apply" />
+                    android:src="@drawable/icon_car" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -144,10 +143,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!--<View-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="0.5dp"-->
-    <!--android:background="@color/bg_blue" />-->
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="0.5dp"--><!--android:background="@color/bg_blue" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -198,6 +194,4 @@
                 android:text="保修申请" />
         </LinearLayout>
     </LinearLayout>
-
-
 </LinearLayout>

@@ -9,6 +9,7 @@ public class OverdueEquipmentBean {
     private String name;
     private String overdueTime;
     private String lendTime;
+    private String lendName;
 
     public OverdueEquipmentBean() {
     }
@@ -17,6 +18,13 @@ public class OverdueEquipmentBean {
         this.name = name;
         this.overdueTime = overdueTime;
         this.lendTime = lendTime;
+    }
+
+    public OverdueEquipmentBean(String name, String overdueTime, String lendTime,String lendName) {
+        this.name = name;
+        this.overdueTime = overdueTime;
+        this.lendTime = lendTime;
+        this.lendName = lendName;
     }
 
     public String getName() {
@@ -41,5 +49,13 @@ public class OverdueEquipmentBean {
 
     public void setLendTime(String lendTime) {
         this.lendTime = lendTime;
+    }
+
+    public String getLendName() {
+        return lendName;
+    }
+
+    public void setLendName(String lendName) {
+        this.lendName = lendName;
     }
 }
