@@ -9,18 +9,17 @@ import com.zq.ems.R;
 import com.zq.ems.adapter.ApplyListAdapter;
 import com.zq.ems.bean.ApplyBean;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import edu.swu.pulltorefreshswipemenulistview.library.PullToRefreshSwipeMenuListView;
 import edu.swu.pulltorefreshswipemenulistview.library.pulltorefresh.interfaces.IXListViewListener;
 
 /**
- * Created by SXJ on 2018/8/15 15:26
+ * Created by SXJ on 2018/8/17 15:43
  * E-Mail Address：2394905398@qq.com
  */
 
-public class ApplyListActy extends BaseActy implements IXListViewListener, AdapterView.OnItemClickListener {
+public class ApplicationRecordListActy extends BaseActy implements IXListViewListener, AdapterView.OnItemClickListener {
 
     private PullToRefreshSwipeMenuListView listView;
     private List<ApplyBean> list;
@@ -35,21 +34,8 @@ public class ApplyListActy extends BaseActy implements IXListViewListener, Adapt
         initView();
     }
 
-    private void initView() {
-        initTitleBar(R.id.title, R.drawable.back, 0, "审批列表", "历史记录", R.color.bg_blue1, R.color.white);
-        listView = (PullToRefreshSwipeMenuListView) findViewById(R.id.list);
-        list = new ArrayList<>();
-        list.add(new ApplyBean());
-        list.add(new ApplyBean());
-        list.add(new ApplyBean());
-        list.add(new ApplyBean());
-        list.add(new ApplyBean());
-        adapter = new ApplyListAdapter(this, list);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(this);
-        listView.setPullRefreshEnable(false);
-        listView.setPullLoadEnable(false);
-        listView.setXListViewListener(this);
+    private void initView(){
+
     }
 
     @Override
@@ -60,8 +46,7 @@ public class ApplyListActy extends BaseActy implements IXListViewListener, Adapt
                 finish();
                 break;
             case R.id.tv_right:
-                intent = new Intent(this, ApplicationRecordListActy.class);
-                startActivity(intent);
+//                intent=new Intent(this,)
                 break;
         }
     }

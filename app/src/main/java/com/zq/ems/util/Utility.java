@@ -17,6 +17,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import okhttp3.ResponseBody;
@@ -145,4 +146,19 @@ public class Utility {
 //        }
 //        return "";
 //    }
+
+    public static String getNowTime(String type) {
+        SimpleDateFormat sDateFormat = new SimpleDateFormat(type);
+        Calendar c = Calendar.getInstance();
+        return sDateFormat.format(c.getTime());
+    }
+
+    public static String dateToStr(Date dateDate, String type) {
+        String dateString = null;
+        if (dateDate != null) {
+            SimpleDateFormat formatter = new SimpleDateFormat(type);
+            dateString = formatter.format(dateDate);
+        }
+        return dateString;
+    }
 }

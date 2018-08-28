@@ -19,8 +19,12 @@ import com.zq.ems.bean.ApplyEquipmentBean;
 import com.zq.ems.bean.TypeBean;
 import com.zq.ems.util.Dimension;
 import com.zq.ems.util.ToastUtil;
+import com.zq.ems.util.Utility;
+import com.zq.ems.view.ChooseTimeDialog;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import edu.swu.pulltorefreshswipemenulistview.library.PullToRefreshSwipeMenuListView;
@@ -50,8 +54,9 @@ public class ApplyEquipmentActy extends BaseActy implements IXListViewListener, 
     private ArrayList<ApplyEquipmentBean> applyEquipmentBeanList;
     private ApplyEquipmentListAdapter adapter;
     private PullToRefreshSwipeMenuListView listView;
-    private TextView tv_submit;
+    private TextView tv_submit,tv_time;
     private Intent intent;
+    private Calendar ca = Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -205,6 +210,9 @@ public class ApplyEquipmentActy extends BaseActy implements IXListViewListener, 
         listView.setPullRefreshEnable(false);
         listView.setPullLoadEnable(false);
         listView.setXListViewListener(this);
+        tv_time = (TextView) findViewById(R.id.tv_time);
+        tv_time.setOnClickListener(this);
+        tv_time.setText(Utility.getNowTime("yyyy-MM-dd"));
         tv_submit = (TextView) findViewById(R.id.tv_submit);
         tv_submit.setOnClickListener(this);
     }
@@ -255,6 +263,7 @@ public class ApplyEquipmentActy extends BaseActy implements IXListViewListener, 
         super.onClick(v);
         switch (v.getId()) {
             case R.id.tb_left:
+                finish();
                 break;
             case R.id.tb_right:
                 int i = 0;
@@ -270,6 +279,15 @@ public class ApplyEquipmentActy extends BaseActy implements IXListViewListener, 
                     adapter.notifyDataSetChanged();
 //                    Log.e("-------->", spinner3.getSelectedItem().toString());
                 }
+                break;
+            case R.id.tv_time:
+                new ChooseTimeDialog(this, new ChooseTimeDialog.Onclick() {
+                    @Override
+                    public void sure(Date d) {
+                        ca.setTime(d);
+                        tv_time.setText(Utility.dateToStr(d,"yyyy-MM-dd"));
+                    }
+                }, ca).show();
                 break;
             case R.id.tv_submit:
                 if (applyEquipmentBeanList.size() == 0) {

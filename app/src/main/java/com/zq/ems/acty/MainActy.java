@@ -122,7 +122,7 @@ public class MainActy extends BaseActy {
                 startActivity(new Intent(MainActy.this, MyInfoActy.class));
                 break;
             case R.id.ll_apply:
-
+                startActivity(new Intent(MainActy.this, ApplyListActy.class));
                 break;
             case R.id.ll_materia:
                 startActivity(new Intent(MainActy.this, TeachingMateriaActy.class));
